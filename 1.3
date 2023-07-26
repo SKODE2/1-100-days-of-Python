@@ -1,0 +1,31 @@
+name = input("enter name: ")
+age = int(input("enter age: ")) 
+gender = input("enter gender: ")
+x = f"""                       
+Your name is {name} 
+you're age {age}
+Your gender {gender}
+"""  
+print(x)
+
+'''  How to creat def out of this..?  '''
+
+def id_info():
+    name = input("Enter name: ")
+    age = int(input("Enter age: "))
+    gender = input("Enter gender: ")
+    # change x to name it's more easy and convenient
+    output = f"""
+Your name is {name}
+You're age {age}
+Your gender {gender}
+"""
+
+    # Save the output to a text file
+    filename = "output.txt"
+    with open(filename, "w") as file:
+        file.write(output)
+
+    print("Information saved to", filename)
+
+id_info()
