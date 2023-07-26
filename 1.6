@@ -1,0 +1,35 @@
+# normal date
+print('09','12','2023', sep='-') # 09-12-2016
+
+# change into input
+day, month, year = input("Enter day, month, year (separated by spaces): ").split()
+print(day, month, year, sep='-')
+
+# change into function 
+def print_date():
+    day, month, year = input("Enter day, month, year (separated by spaces): ").split()
+    print(day, month, year, sep='-')
+
+# Call and execute the code
+print_date()
+
+'''========================================'''
+
+# extra
+
+def print_date():
+    inputs = input("Enter day, month, year (separated by spaces): ").split()
+    date_parts = []
+    # If user tab spaces mucht than one in ignores
+    for part in inputs:
+        if part.strip():
+            date_parts.append(part.strip())
+    # If user input < 3 columns invalid
+    if len(date_parts) == 3:
+        day, month, year = date_parts
+        print(day, month, year, sep='-')
+    else:
+        print("Invalid input. Please provide day, month, and year.")
+
+# Call the function to execute the code
+print_date()
