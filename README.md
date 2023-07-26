@@ -7,7 +7,7 @@
 - 😅 here is more than a print function
 - 😓 or relevant with print function maybe you're interested
 
-- 💬 Ask me about **I'm Master on Python.**
+- 💬 About me  **I'm Master on Python.**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
