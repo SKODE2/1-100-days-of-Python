@@ -1,0 +1,58 @@
+import os
+from print_1 import greet as grt
+from print_1 import ascii as asc
+# color print
+print('\33[1;33mHELLO.....YELLOW......')
+
+# parameters print วงจำกัด limit, parameters
+print('\33[0m', end='') #color แนวนอน
+
+print("kat", end='@') 
+print("hotmail.com") # รวมกันได้ kat@hotmail.com
+
+print('09','12','2023', sep='-') # 09-12-2016
+
+# change into input
+day, month, year = input("Enter day, month, year (separated by spaces): ").split()
+print(day, month, year, sep='-')
+
+print(' TEXT ', end='\n') #\n \v \t \"
+
+# print multiline
+print("""\33[1;32m
+ my dear, I don't give a damn. *Gone with the Wind
+ I'm gonna make him an offer he can't refuse. *The Godfather
+ Toto, I've a feeling we're not in Kansas anymore. *The Wizard of Oz
+ May the Force be with you. *Star Wars \33[0m
+""")
+
+asc()
+
+# print multiline + format = print (f" text {ตัวแปร} text {ตัวแปร} text")
+gonewiththeWind = 'gone with the Wind'
+theGodfather = 'the God father'
+theWizardofOz = 'the Wizard'
+starWars = 'starWars'
+land = 'wano'
+
+print(f"Toto, I've a feeling we're not in Kansas anymore {theWizardofOz} of {land}")
+print(f"""
+ my dear, I don't give a damn. {gonewiththeWind}
+ I'm gonna make him an offer he can't refuse. {theGodfather}
+ Toto, I've a feeling we're not in Kansas anymore. {theWizardofOz}
+ May the Force be with you. {starWars}
+""")
+
+# print operator %format :  % = int   %f = 0.00 float
+print("Geeks : %2d, Portal : %5.2f" % (1, 05.333))
+
+# print (round( int , 2))
+print(round(12.565445, 2))
+
+grt()
+
+os.system("python3 print_4.py")
+os.system("python3 print_3.py")
+os.system("python3 print_2.py")
+
+
