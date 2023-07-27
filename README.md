@@ -1,3 +1,6 @@
+![print](https://github.com/SKODE2/1-100-days-of-python-print/assets/139722050/ef04f828-f83c-4b1b-b7fb-c2bc817aeae0)
+
+
 <h1 align="center">Hi 👋, I'm Kat</h1>
 <h3 align="center">A Newbie on Python 😉</h3>
 
